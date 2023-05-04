@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title> system</title>
+ </head>
+ <body>
+    <div class="scroller"></div>
+    <div class="scrollerr"></div>
+    <input type="image" id="btn" src="1.png"  >
+ <div class="crud">
+ <div class="head">
+    <h2>system</h2>
+    <p>producd managment system</p>
+ </div>
+ <div class="inputs">
+    <input placeholder="title" type="text" name="" id="title">
+    <div class="price">
+        <input onkeyup="getTotal()" placeholder="price" type="number" name="" id="price">
+        <input onkeyup="getTotal()" placeholder="taxes" type="number" name="" id="taxes">
+        <input onkeyup="getTotal()" placeholder="ads" type="number" name="" id="ads">
+        <input onkeyup="getTotal()" placeholder="discount" type="number" name="" id="discount">
+    <small id="total"></small>
+    </div>
+    <input placeholder="count" type="number" name="" id="count">
+    <input placeholder="category" type="text" name="" id="category">
+    <button id="submit">Create</button>
+ </div>
+ <div class="outputs">
+    <div class="searchBlock">
+        <input onkeyup="searchData(this.value)" placeholder="search" type="text" name="" id="search">
+        <div class="btnSearch">
+            <button onclick="getSearchMood(this.id)" id="searchTitle">search By Title</button>
+            <button onclick="getSearchMood(this.id)" id="searchCatgory">search By Category</button>
+        </div>
+    </div>
+    <div id="deleteAll">
+    </div>
+    <table>
+<thead>
+    <tr>
+    <th>id</th>
+    <th>title</th> 
+    <th>price</th> 
+    <th>taxes</th> 
+    <th>ads</th> 
+    <th>discount</th>
+    <th>total</th> 
+    <th>category</th> 
+    <th>update</th> 
+    <th>delete</th>
+    </tr>
+ </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+ </div>
+ </div>
+ <script src="main.js"></script>
+ </body>
+ </html>

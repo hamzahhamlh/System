@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.scroller{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 3px;
+    background-color: #4485ff;
+    z-index: 99999;
+}
+.scrollerr{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 0px;
+    background-color: #4485ff;
+    z-index: 99999;
+}
+body{
+    background-color: #fff;
+    width: 100%;
+    color: #000;
+    
+    font-family: system-ui;
+
+}
+.crud{
+    width: 80%;
+    margin: auto;
+
+}
+
+.head{
+    color:#4485ff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}
+p{
+color:#111;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 1px #4485ff solid;
+    background-color: #fff;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #111;
+    transition: 0.4s;
+}
+input:focus{
+    background-color:#cad7ef;
+    font-size: 16px;
+    font-weight: 700;
+    transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+
+}
+#total{
+    background-color: #f10;
+    padding: 5px 2px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#total::before{
+    content: 'Total : ';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color:#4485ff ;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color:#1353cb ;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+div #deleteAll #deleteAll{
+    background-color:rgb(237, 81, 70);
+}
+#delete{
+    background-color:rgb(237, 81, 70);}
+div #deleteAll #deleteAll:hover{
+    background-color:rgb(221, 19, 4);
+}
+#delete:hover{
+    background-color:rgb(221, 19, 4);
+    
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+
+}
+#deleteAll{
+    margin: 20px 0;
+    
+}
+.btnSearch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+
+            
+}
+table th{
+    text-transform: uppercase;
+    /* border: 1px #000 solid; */
+}
+tbody{
+    border: 1px #4485ff solid;
+    border-right: none;
+
+}
+th,td{
+    padding: 5px;
+    border-bottom:1px  #4485ff solid;
+
+    /* border: 1px #4485ff solid; */
+}
+#btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color:#4485ff ;
+    color: aliceblue;
+    cursor:pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+    display: none; 
+}
+#btn:hover{
+    background-color:#1353cb ;
+    letter-spacing: 1px;
+
+}
